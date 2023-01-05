@@ -1,5 +1,5 @@
 import React from "react";
-import PersonIcon from "@mui/icons-material/Person";
+import { ReactComponent as User } from 'assets/user.svg';
 
 const Starring = ({ starringName }) => (
   <div className="info__content-rigth">
@@ -10,7 +10,7 @@ const Starring = ({ starringName }) => (
           <div className="rigth-info-item" key={index}>
             <div className="rigth-info-item-starring">
               <span>
-                <PersonIcon />
+         <User className="rigth-info-item-starring__svg"/>
               </span>
               <p>{elem}</p>
             </div>

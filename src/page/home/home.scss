@@ -38,11 +38,15 @@
   width: 100%;
   height: 250px;
   margin-bottom: 5px;
+  box-shadow: 10px 10px 10px #a7a1a1;
+  border-radius: 10px;
+
   
 
   cursor: pointer;
   img {
     @include WidthHigth;
+    border-radius: 10px;
   }
   :hover{
     transform: scale(1.05);  

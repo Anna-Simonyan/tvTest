@@ -1,6 +1,6 @@
 import Rating from "@mui/material/Rating";
 
-import { Link, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectFilms } from "store/selector";
 
@@ -14,10 +14,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__container">
-        <Link to="/">
-          {" "}
+        <NavLink to="/">
           <h1 className="header__home-h1">TV Bland</h1>
-        </Link>
+        </NavLink>
         {pathname !== `/info/${id}` ? (
           <>
             <div className="header__home-texts">
@@ -39,7 +38,6 @@ const Header = () => {
              <div>{filmItems?.show?.rating?.average}</div>
               <h3 className="header__rigth-h3">{filmItems?.name}</h3>
               <p className="header__rigth-text">{filmItems.summary}</p>
-            
             </div>
           </div>
         )}

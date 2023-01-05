@@ -16,6 +16,7 @@
   margin-bottom: 30px;
   font-family: "Sofia", sans-serif;
   text-shadow: 3px 3px 3px #898585;
+  cursor: pointer;
 }
 .header__home-texts {
   margin-bottom: 10px;
@@ -42,9 +43,11 @@
 .header__left-img {
   width: 250px;
   height: 350px;
+  border-radius: 10px;
 
   img {
     @include WidthHigth;
+    border-radius: 10px;
   }
   :hover{
     transform: scale(1.05); 

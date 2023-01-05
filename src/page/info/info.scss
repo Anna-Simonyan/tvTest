@@ -69,9 +69,12 @@
     height: 40px;
     border-radius: 25px;
     background-color: $gray;
-    svg {
-      color: #fff;
-    }
+    
+  }
+  &__svg {
+fill: white;
+    width: 15px;
+    height: 15px;
   }
 }
 
