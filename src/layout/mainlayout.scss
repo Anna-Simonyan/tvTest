@@ -43,11 +43,12 @@
 .header__left-img {
   width: 250px;
   height: 350px;
-  border-radius: 10px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px #a7a1a1;
 
   img {
     @include WidthHigth;
-    border-radius: 10px;
+    border-radius: 3px;
   }
   :hover{
     transform: scale(1.05); 
@@ -55,10 +56,19 @@
 }
 .header__rigth {
   padding: 20px;
+  &-inner{
+    display: flex;
+    align-items: center;
+    div{
+      margin-left: 8px;
+    font-weight: bold;
+    }
+  }
 }
 .header__rigth-h3 {
   font-size: 30px;
   margin: 20px 0px 20px;
+  text-shadow: 3px 3px 3px #898585;
 }
 .header__rigth-text{
   line-height: 23px;
