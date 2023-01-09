@@ -32,6 +32,7 @@
   max-width: 200px;
   width: 100%;
   margin-bottom: 20px;
+
 }
 .home__item-img {
   max-width: 200px;
@@ -40,6 +41,8 @@
   margin-bottom: 5px;
   box-shadow: 10px 10px 10px #a7a1a1;
   border-radius: 3px;
+  
+  
 
   
 
@@ -47,13 +50,18 @@
   img {
     @include WidthHigth;
     border-radius: 3px;
+  transition: 0.5s;
+  animation: ease-in-out;
+
   }
-  :hover{
-    transform: scale(1.05);  
-}
+  :hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 0px;
+  }
 }
 .home__item-reting {
   margin-bottom: 5px;
+
 }
 .home__item-text {
   max-width: 140px;

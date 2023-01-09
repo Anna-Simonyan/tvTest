@@ -1,17 +1,16 @@
+import React from "react";
 import Rating from "@mui/material/Rating";
-
 import { NavLink, useLocation, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectFilms } from "store/selector";
 
 
 
-const Header = ({filmItem}) => {
+const Header = () => {
   const { pathname, state } = useLocation();
   const { filmItems } = useSelector(selectFilms);
-  
   const { id } = useParams();
-
+  const text = filmItems?.summary?.split("<p>").join(" ").split("<b>").join(" ").split("</b>").join(" ").split("</p>").join(" ").split("<i>").join(" ").split("</i>").join(" ")
   return (
     <div className="header">
       <div className="header__container">
@@ -38,7 +37,7 @@ const Header = ({filmItem}) => {
             <div className="header__rigth-inner"> <Rating name="size-small" defaultValue={state?.rating} max={5} /> <div>{filmItems?.rating?.average}</div> </div> 
              <div>{filmItems?.show?.rating?.average}</div>
               <h3 className="header__rigth-h3">{filmItems?.name}</h3>
-              <p className="header__rigth-text">{filmItems.summary }</p>
+              <p className="header__rigth-text">{text}</p>
             </div>
           </div>           
         )}
