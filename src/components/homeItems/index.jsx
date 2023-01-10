@@ -20,7 +20,7 @@ const films = filmItem().map((elem)=>(
   />
 ))
   
-const skeletons = [...new Array()].map((_, i) => <MyLoader key={i} />);
+const skeletons = [...new Array(18)].map((_, i) => <MyLoader key={i} />);
 
   return <div className="home__items">{loading ? skeletons : films}</div>;
 };

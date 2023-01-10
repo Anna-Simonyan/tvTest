@@ -10,8 +10,7 @@ const MyLoader = (props) => (
     backgroundColor="#f3f3f3"
     foregroundColor="#ecebeb"
     {...props}>
-    <rect x="27" y="56" rx="0" ry="0" width="184" height="237" />
-
+    <rect x="27" y="56" rx="0" ry="0" width="184" height="237"/>
     <rect x="48" y="8" rx="3" ry="3" width="88" height="6" /> 
     <rect x="48" y="26" rx="3" ry="3" width="52" height="6" /> 
     <rect x="0" y="56" rx="3" ry="3" width="410" height="6" /> 
